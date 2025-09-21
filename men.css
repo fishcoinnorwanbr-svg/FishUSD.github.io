@@ -1,0 +1,57 @@
+:root {
+    --yellow: #b4a30a;
+    --black: #000000;
+    --blue: #00a2ff;
+}
+
+* {
+    color:var(--fontColor);
+    font-family: 'Finger Paint', monospace;
+}
+
+body {
+    background: var(--bg);
+}
+
+ul {
+    font-family: 'Finger Paint', monospace;
+}
+
+li {
+    list-style: circle;
+}
+
+.list {
+    list-style: square;
+
+}
+.ligth-theme {
+   --bg:var(--black);
+   --fontColor:var(--yellow);
+   --btnbg: var(--blue);
+   --fontColor:var(--yellow);
+}
+
+.dark-theme {
+    --bg: var(--blue);
+    --fontColor:var(--yellow);
+    --btnbg: var(--black);
+    --fontColor: var(--yellow);
+}
+
+
+.btn {
+    position: absolute;
+    top:  20px;
+    left: 250px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    color: var(--btnfontColor);
+    background-color: var(--btnbg);
+}
+
+.btn:focus {
+    outline-style: none;
+}
